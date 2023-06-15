@@ -4,6 +4,10 @@
 #include <unistd.h>
 int main(void){
     int D1,D2,total;
+    char name[50];
+    printf("What is your name?\n");
+    scanf("%s",name);
+    printf("Hello,%s!\n",name);
     printf("Rolling dice...\n");
     srand((unsigned int)time(NULL));
     D1=rand()%6+1;
